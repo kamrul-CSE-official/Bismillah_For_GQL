@@ -15,7 +15,7 @@ const products = [
     price: 2499.99,
     quantity: 10,
     onStock: true,
-    category: "cat1",
+    categoryId: "cat1",
   },
   {
     id: "prod2",
@@ -25,7 +25,7 @@ const products = [
     price: 1099.99,
     quantity: 20,
     onStock: true,
-    category: "cat2",
+    categoryId: "cat2",
   },
   {
     id: "prod3",
@@ -35,7 +35,7 @@ const products = [
     price: 349.99,
     quantity: 15,
     onStock: true,
-    category: "cat3",
+    categoryId: "cat3",
   },
   {
     id: "prod4",
@@ -45,7 +45,7 @@ const products = [
     price: 3899.99,
     quantity: 5,
     onStock: true,
-    category: "cat4",
+    categoryId: "cat4",
   },
   {
     id: "prod5",
@@ -55,11 +55,57 @@ const products = [
     price: 99.99,
     quantity: 30,
     onStock: true,
-    category: "cat5",
+    categoryId: "cat5",
+  },
+];
+
+const reviews = [
+  {
+    id: "rev1",
+    review: "Amazing laptop with stunning performance!",
+    rating: 4.8,
+    date: "2024-03-30",
+    productId: "prod1",
+  },
+  {
+    id: "rev1",
+    review: "Amazing laptop !",
+    rating: 4.4,
+    date: "2024-03-20",
+    productId: "prod1",
+  },
+  {
+    id: "rev2",
+    review: "Great phone with a fantastic camera!",
+    rating: 4.7,
+    date: "2024-03-29",
+    productId: "prod2",
+  },
+  {
+    id: "rev3",
+    review: "Best noise-canceling headphones I've ever used.",
+    rating: 4.9,
+    date: "2024-03-28",
+    productId: "prod3",
+  },
+  {
+    id: "rev4",
+    review: "High-quality camera for professionals.",
+    rating: 4.6,
+    date: "2024-03-27",
+    productId: "prod4",
+  },
+  {
+    id: "rev5",
+    review: "Super comfortable and efficient mouse!",
+    rating: 4.5,
+    date: "2024-03-26",
+    productId: "prod5",
   },
 ];
 
 export const db = {
   categories,
   products,
+  reviews,
 };
